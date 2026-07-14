@@ -1,0 +1,152 @@
+/* ===== Página ===== */
+
+body {
+  background-color: #fff9f5;
+  font-family: "Nunito", sans-serif;
+  color: #5c5c5c;
+  margin: 0;
+  padding: 40px;
+}
+
+/* ===== Título ===== */
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha tudo na mesma altura */
+  gap: 12px; /* Espaço entre a coroa e o texto */
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 46px;
+  margin-bottom: 40px;
+}
+
+.titulo {
+  background: linear-gradient(90deg, #ff5c8a, #ff9f43, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.coroa {
+  font-size: 40px;
+  position: relative;
+  top: -3px;
+}
+
+/* ===== Catálogo ===== */
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ===== Cada produto ===== */
+
+.produto {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+}
+
+.nomeProduto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 20px 0;
+}
+
+.nomeProduto h2 {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 24px;
+}
+
+.nomeProduto span {
+  font-size: 21px;
+  font-weight: bold;
+  color: #ff5c8a;
+  white-space: nowrap;
+}
+
+.produto p {
+  margin: 8px 20px 20px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #555;
+  flex-grow: 1;
+}
+
+/* ===== Cores dos produtos ===== */
+
+#chocolate {
+  background-color: #f8d7c8;
+}
+
+#chocolate h2 {
+  color: #8b5e3c;
+}
+
+#morango {
+  background-color: #ffd9e6;
+}
+
+#morango h2 {
+  color: #d85c8a;
+}
+
+#nutella {
+  background-color: #f3e1d6;
+}
+
+#nutella h2 {
+  color: #7a4a32;
+}
+
+#cookies {
+  background-color: #ddefff;
+}
+
+#cookies h2 {
+  color: #4a6fa5;
+}
+
+#colorido {
+  background-color: #e7d9ff;
+}
+
+#colorido h2 {
+  color: #8a5ccf;
+}
+
+/* ===== Produto oculto ===== */
+.oculto {
+  display: none;
+}
+
+#rodape {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
