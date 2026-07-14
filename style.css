@@ -1,3 +1,61 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 18px 25px;
+
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 5px 12px rgba(114, 79, 81, 0.15);
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  width: 195px;
+  height: 115px;
+  object-fit: contain;
+  display: block;
+  margin-left: -25px;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  margin-left: -30px;
+}
+
+.menu a {
+  color: #724f51;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #ff5c8a;
+}
+
+.botao-login {
+  background-color: #724f51;
+  color: white;
+  border: 2px solid #ff5c8a;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao-login:hover {
+  background-color: #412b2c;
+}
+
 /* ===== Página ===== */
 
 body {
@@ -144,9 +202,10 @@ h1 {
 }
 
 #rodape {
+  font-family: "Nunito", sans-serif;
   margin-top: 40px;
   padding: 20px;
   text-align: center;
   font-size: 14px;
-  color: #555;
+  color: #724f51;
 }
