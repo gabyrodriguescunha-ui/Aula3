@@ -4,7 +4,7 @@
   align-items: center;
   gap: 30px;
 
-  max-width: 900px;
+  max-width: 1382px;
   margin: 0 auto 40px;
   padding: 18px 25px;
 
@@ -33,9 +33,12 @@
 }
 
 .menu a {
+  font-family: "Nunito", sans-serif;
   color: #724f51;
   text-decoration: none;
   font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s ease;
 }
 
 .menu a:hover {
@@ -47,13 +50,19 @@
   color: white;
   border: 2px solid #ff5c8a;
   border-radius: 20px;
-  padding: 10px 22px;
+  padding: 19px 35px; /* aumentou */
   font-weight: bold;
+  font-size: 20px; /* aumentou a letra */
   cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .botao-login:hover {
-  background-color: #412b2c;
+  background-color: #25191a;
+  transform: translateY(-2px);
 }
 
 /* ===== Página ===== */
@@ -84,6 +93,9 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-align: center;
+  margin-top: 80px; /* aumenta a distância do cabeçalho */
+  margin-bottom: 80px; /* espaço até os donuts */
 }
 
 .coroa {
@@ -96,15 +108,16 @@ h1 {
 
 .catalogo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 1400px;
+  grid-template-columns: repeat(2, 480px);
+  justify-content: center;
+  gap: 35px;
   margin: auto;
 }
 
 /* ===== Cada produto ===== */
 
 .produto {
+  max-width: 480px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
@@ -112,18 +125,37 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  height: 100%;
+}
+
+.avaliacao {
+  margin: 8px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.estrelas {
+  color: #ffc107; /* dourado */
+}
+
+.nota {
+  color: #555; /* cinza */
+  font-size: 16px;
 }
 
 .produto img {
   width: 100%;
-  height: auto;
+  margin: 0;
   display: block;
-}
+  border-radius: 12px;
 
-.produto:hover {
-  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
+.produto img:hover {
+  transform: scale(1.05);
+}
+/*.produto:hover {
+  transform: scale(1.03);
+}*/
 
 .nomeProduto {
   display: flex;
@@ -136,11 +168,11 @@ h1 {
 .nomeProduto h2 {
   margin: 0;
   font-family: "Fredoka", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .nomeProduto span {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
   color: #ff5c8a;
   white-space: nowrap;
@@ -148,7 +180,7 @@ h1 {
 
 .produto p {
   margin: 8px 20px 20px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5;
   color: #555;
   flex-grow: 1;
@@ -201,6 +233,31 @@ h1 {
   display: none;
 }
 
+/* ===== botao comprar ==== */
+.comprar {
+  margin: 0 20px 20px;
+  padding: 12px 20px;
+
+  background-color: #724f51;
+  color: #ffffff;
+  border: 2px solid #ff5c8a;
+
+  border: none;
+  border-radius: 20px;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comprar:hover {
+  background-color: #25191a;
+}
+
+/* ===== rodape ===== */
 #rodape {
   font-family: "Nunito", sans-serif;
   margin-top: 40px;
